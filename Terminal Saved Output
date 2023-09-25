@@ -1,0 +1,47 @@
+Last login: Sat Sep 23 08:59:34 on ttys000
+user@users-MacBook-Air ~ % mkdir first-shell-script
+mkdir: first-shell-script: File exists
+user@users-MacBook-Air ~ % git status 
+warning: could not open directory '.Trash/': Operation not permitted
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Documents/Untitled.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    Documents/Untitled.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.CFUserTextEncoding
+	.DS_Store
+	.gitconfig
+	.gitconfig.swp
+	.viminfo
+	.zprofi
+	.zsh_history
+	Applications/
+	BrawlhallaReplays/
+	Desktop/
+	Documents/.DS_Store
+	Documents/.localized
+	Documents/Untitled 2.rtf
+	Documents/Untitled.odt
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+	install.sh
+	my-script.sh
+
+user@users-MacBook-Air ~ % echo '#!/bin/sh' > my-script.sh
+
+user@users-MacBook-Air ~ % echo 'echo Hello World' >> my-script.sh
+user@users-MacBook-Air ~ %  chmod u+rx my-script.sh
+user@users-MacBook-Air ~ % ./my-script.sh
+Hello World
+user@users-MacBook-Air ~ % 
